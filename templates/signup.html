@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - Home Decor Website</title>
+    <link rel="stylesheet" type="text/css" href="https://dj5x34pkb4cps.cloudfront.net/static/auth_styles.css">
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Decor Website</h1>
+    <h2>Signup</h2>
+    <form method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Signup">
+    </form>
+    <p style="text-align: center;">Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+</body>
+</html>
+
