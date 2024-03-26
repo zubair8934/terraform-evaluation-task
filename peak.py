@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for
-import boto3
 import pymysql
 import os
 
@@ -11,7 +10,6 @@ hostname = os.getenv('FLASK_DB_HOST')
 user = os.getenv('FLASK_DB_USER')
 password = os.getenv('FLASK_DB_PASSWORD')
 database = os.getenv('FLASK_DB_NAME')
-
 
 
 db = pymysql.connections.Connection(
