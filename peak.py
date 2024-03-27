@@ -5,10 +5,10 @@ import os
 
 app = Flask(__name__)
 
-hostname = os.getenv('FLASK_DB_HOST')
-user = os.getenv('FLASK_DB_USER')
-password = os.getenv('FLASK_DB_PASSWORD')
-database = os.getenv('FLASK_DB_NAME')
+hostname = "my-db.cluster-c93nshwqez3k.us-east-1.rds.amazonaws.com"
+user = "admin"
+password = "admin123"
+database = "my_test_db"
 
 db = pymysql.connections.Connection(
     host=hostname,
