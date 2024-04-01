@@ -5,11 +5,6 @@ import os
 
 app = Flask(__name__)
 
-# hostname = os.getenv('FLASK_DB_HOST')
-# user = os.getenv('FLASK_DB_USER')
-# password = os.getenv('FLASK_DB_PASSWORD')
-# database = os.getenv('FLASK_DB_NAME')
-
 hostname = "hostname_here"
 database = "database_name_here"
 user = "username_here"
